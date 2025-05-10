@@ -13,12 +13,14 @@ var divideBtn = document.getElementById('divideBtn');
 var clearBtn = document.getElementById('clearBtn');
 var primeCheckBtn = document.getElementById('primeCheckBtn');
 var sqrBtn = document.getElementById('sqrBtn');
-var rootBtn = document.getElementById('rootBtn');
+var cubBtn = document.getElementById('cubBtn');
+var sqRootBtn = document.getElementById('sqRootBtn');
+var cbRootBtn = document.getElementById('cbRootBtn');
 
 var rslt = document.getElementById('result');
 // var primeRslt = document.getElementById('primeOrNot');
 // var sqrRslt = document.getElementById('sqrRslt');
-
+var outputText = rslt.innerHTML;
 
 
 // num1.addEventListener('keydown', function(event) {
@@ -29,7 +31,7 @@ addBtn.addEventListener('click', function() {
     number1 = num1.value;
     number2 = num2.value;
     sum  = Number(number1) + Number(number2);
-    rslt.innerHTML = "Sum: " + sum;
+    rslt.innerHTML = outputText + " " + sum;
     num1.value = "";
     num2.value = "";
     // console.log(sum);
@@ -40,7 +42,7 @@ subBtn.addEventListener('click', function() {
     number1 = num1.value;
     number2 = num2.value;
     diff  = Number(number1) - Number(number2);
-    rslt.innerHTML = "Difference: " + diff;
+    rslt.innerHTML = outputText + " " + diff;
     num1.value = "";
     num2.value = "";
     // console.log(diff);
@@ -50,7 +52,7 @@ multiplyBtn.addEventListener('click', function() {
     number1 = num1.value;
     number2 = num2.value;
     product  = Number(number1) * Number(number2);
-    rslt.innerHTML = "Product: " + product;
+    rslt.innerHTML = outputText + " " + product;
     num1.value = "";
     num2.value = "";
     // console.log(diff);
@@ -60,7 +62,7 @@ divideBtn.addEventListener('click', function() {
     number1 = num1.value;
     number2 = num2.value;
     division  = Number(number1) / Number(number2);
-    rslt.innerHTML = "Division: " + division;
+    rslt.innerHTML = outputText + " " + division;
     num1.value = "";
     num2.value = "";
     // console.log(diff);
@@ -88,19 +90,33 @@ primeCheckBtn.addEventListener('click', function() {
 });
 
 sqrBtn.addEventListener('click', function() {
-    num = sqrNum.value;
+    let num = sqrNum.value;
     sqrResult = Math.pow(num, 2);
     rslt.innerHTML = sqrResult;
     sqrNum.value = "";
 })
 
-rootBtn.addEventListener('click', function() {
+cubBtn.addEventListener('click', function() {
+    let num = sqrNum.value;
+    sqrResult = Math.pow(num, 3);
+    rslt.innerHTML = sqrResult;
+    sqrNum.value = "";
+})
+
+sqRootBtn.addEventListener('click', function() {
     let num = rootNum.value;
     let rootResult = Math.sqrt(num);
     rslt.innerHTML = rootResult;
     rootNum.value = "";
 });
 
+cbRootBtn.addEventListener('click', function() {
+    let num = rootNum.value;
+    let rootResult = Math.cbrt(num);
+    rslt.innerHTML = rootResult;
+    rootNum.value = "";
+});
+
 clearBtn.addEventListener('click', function() {
-    rslt.innerHTML = "";
+    rslt.innerHTML = outputText;
 })
