@@ -4,41 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>CalculatorJS</h1>
+    <div id="main">
+      <h1 id="title">CalculatorJS</h1>
 
-    <p id="result">Output:</p>
-    <h3>DMAS (div, mul, add, sub)</h3>
+      <p id="result">Output:</p>
+      <h3>DMAS (div, mul, add, sub)</h3>
 
-    <input id="num1" type="number" placeholder="Enter first number" />
-    <input id="num2" type="number" placeholder="Enter second number" />
-    <button id="addBtn">+</button>
-    <button id="subBtn">-</button>
-    <button id="multiplyBtn">*</button>
-    <button id="divideBtn">/</button>
-    <button id="clearBtn">clear</button>
-    <p></p>
+      <!-- Dmas -->
+      <input id="num1" type="number" placeholder="Enter first number" />
+      <input id="num2" type="number" placeholder="Enter second number" />
+      <button id="addBtn">+</button>
+      <button id="subBtn">-</button>
+      <button id="multiplyBtn">×</button>
+      <button id="divideBtn">÷</button>
+      <button id="clearBtn">clear</button>
+      <p></p>
 
-    <h3>Prime Number Checker</h3>
-    <input
-      id="primeNum"
-      type="number"
-      placeholder="Enter the number to check"
-    />
-    <button id="primeCheckBtn">check</button>
-    <p></p>
+      <!-- prime number checker -->
+      <h3>Prime Number Checker</h3>
+      <input
+        id="primeNum"
+        type="number"
+        placeholder="Enter the number to check"
+      />
+      <button id="primeCheckBtn">check</button>
+      <p></p>
 
-    <h3>Square/ Cube a Number</h3>
-    <input id="sqrNum" type="number" placeholder="Enter a number" />
-    <button id="sqrBtn">x²</button>
-    <button id="cubBtn">x³</button>
-    <p></p>
+      <!-- square or cube -->
+      <h3>Square/ Cube a Number</h3>
+      <input id="sqrCubNum" type="number" placeholder="Enter a number" />
+      <button id="sqrBtn">x²</button>
+      <button id="cubBtn">x³</button>
+      <p></p>
 
-    <h3>Square or cubic root of a Number</h3>
-    <input id="rootNum" type="number" placeholder="Enter a number" />
-    <button id="sqRootBtn">√x</button>
-    <button id="cbRootBtn">∛x</button>
+      <!-- square or cube root of a number -->
+      <h3>Square or cubic root of a Number</h3>
+      <input id="rootNum" type="number" placeholder="Enter a number" />
+      <button id="sqRootBtn">√x</button>
+      <button id="cbRootBtn">∛x</button>
+    </div>
 
     <script src="index.js"></script>
   </body>

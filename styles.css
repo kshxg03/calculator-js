@@ -1,1 +1,29 @@
-/* add prime checker in the calculator, and also add roots and squares and cubes */
+body {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#main {
+    background-color: black;
+    height: 90%;
+    width: 40%;
+    padding-inline: 30px;
+
+}
+
+button {
+    background-color: #FE9526;
+    border: 0px;
+}
+
+#clearBtn {
+    background-color: #FF4A3D;
+}
+
+#title {
+    color: #FE9526;
+}
