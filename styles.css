@@ -59,6 +59,7 @@ button {
     height: 40px;
     width: 45%;
     padding-inline: 10px;
+    border-radius: 0%;
 }
 
 #dmas-innerdiv1{
@@ -75,6 +76,7 @@ button {
     width: 64.5%;
     height: 40px;
     padding-inline: 10px;
+    border-radius: 0%;
 }
 
 #primeCheckBtn {
@@ -94,6 +96,7 @@ button {
     width: 64.5%;
     height: 40px;
     padding-inline: 10px;
+    border-radius: 0%;
 }
 
 .sq-cb-btn{
@@ -113,10 +116,12 @@ button {
     width: 64.5%;
     height: 40px;
     padding-inline: 10px;
+    border-radius: 0%;
 }
 
 #output-div{
     background-color: #333333;
+    flex-shrink: 0;
     /* border: 1px solid white ; */
     height: 50px;
     color: #43D6FF;
@@ -124,6 +129,7 @@ button {
     align-items: center;
     justify-content: flex-end;
     padding-inline: 20px;
+    border-radius: 0%;
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -167,6 +173,9 @@ button {
         }
         #rootNum {
             width: 93%;
+        }
+        #output-div{
+            height: 70px;
         }
 
 }
