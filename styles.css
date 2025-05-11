@@ -12,7 +12,8 @@ body {
     height: 90%;
     width: 40%;
     padding-inline: 30px;
-
+    display: flex;
+    flex-direction: column;
 }
 
 button {
@@ -22,8 +23,156 @@ button {
 
 #clearBtn {
     background-color: #FF4A3D;
+    height: 40px;
+    width: 30%;
+    color: white;
+    font-weight: 200;
+    font-size: 13px;
+}
+
+.dmas-btn {
+    width: 16%;
+    height: 40px;
+    color: white;
+    font-weight: 200;
+    font-size: 18px;
 }
 
 #title {
     color: #FE9526;
+    /* text-align: center; */
+}
+
+#dmas-div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#dmas-innerdiv2{
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.dmas-input {
+    height: 40px;
+    width: 45%;
+    padding-inline: 10px;
+}
+
+#dmas-innerdiv1{
+    display: flex;
+    justify-content: space-between;
+}
+
+#prime-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#primeNum {
+    width: 64.5%;
+    height: 40px;
+    padding-inline: 10px;
+}
+
+#primeCheckBtn {
+    height: 45.5px;
+    width: 29%;
+    color: white;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+#sqr-cub-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sqrCubNum {
+    width: 64.5%;
+    height: 40px;
+    padding-inline: 10px;
+}
+
+.sq-cb-btn{
+    width: 14%;
+    height: 45.5px;
+    color: white;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+#root-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#rootNum {
+    width: 64.5%;
+    height: 40px;
+    padding-inline: 10px;
+}
+
+#output-div{
+    background-color: #333333;
+    /* border: 1px solid white ; */
+    height: 50px;
+    color: #43D6FF;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-inline: 20px;
+}
+
+@media only screen and (max-device-width: 480px) {
+        #main{
+            width: 80%;
+        }
+        #dmas-innerdiv1{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .dmas-input {
+            width: 93%;
+        }
+        #prime-div {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        #primeNum {
+            width: 93%;
+        }
+        #primeCheckBtn {
+            width: 100%;
+        }
+        #sqr-cub-div {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        #sqrCubNum {
+            width: 93%;
+        }
+        .sq-cb-btn {
+            width: 100%;
+        }
+        #root-div{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        #rootNum {
+            width: 93%;
+        }
+
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    #main{
+            width: 80%;
+        }
 }
